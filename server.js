@@ -13,8 +13,6 @@ app.get("/", function (req, res) {
   res.sendFile(process.cwd() + "/views/index.html");
 });
 
-app.listen(8080);
-
 app.post("/api/fileanalyse", upload.single("upfile"), function (req, res) {
   console.log(req.file);
   res.json({
