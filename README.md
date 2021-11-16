@@ -7,7 +7,7 @@
 :wrench:Technologies used:
 
 - HTML, CSS, Javascript
-- Node.js, Express
+- Node.js, Express, MongoDB, Multer npm package.
 
 
 :link:Link:
