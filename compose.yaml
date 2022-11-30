@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+
+  file-metadata-microservice:
+    build: ./
+    ports:
+      - 3000:3000
+
+# Run this in the terminal
+# docker-compose -f compose.yaml up      
