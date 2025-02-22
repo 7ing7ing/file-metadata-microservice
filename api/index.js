@@ -9,10 +9,10 @@ const path = require('path');
 const app = express();
 
 app.use(cors());
-app.use("/public", express.static(path.join(__dirname, '..','public')));
+app.use("/public", express.static(path.join(__dirname, "..","public")));
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
+  res.sendFile(path.join(__dirname, "..", "views", "index.html"));
 });
 
 app.post("/api/fileanalyse", upload.single("upfile"), function (req, res) {
